@@ -43,5 +43,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.3"
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "https://portefelio-dynamic-mern.onrender.com/"
 }
