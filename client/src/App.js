@@ -18,7 +18,7 @@ function App() {
     try {
       dispatch(showLoading());
 
-      const response = await axios.get('/api/portofolio/get-portfolio-data');
+      const response = await axios.get('https://portefelio-dynamic-mern.onrender.com/api/portofolio/get-portfolio-data');
      
       dispatch(setPortfolioData(response.data));
       dispatch(ReloadData(false))
