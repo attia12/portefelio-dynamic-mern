@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ * {
+    font-family: 'Montserrat',sans-serif;
+ }
+ i {
+   cursor: pointer;
+ }
+ i:hover {
+   color: white;
+   
+ }
+ .m {
+  animation: m 1s infinite;
+ }
+ @keyframes m {
+  0% {
+    opacity: 1;
+
+  }
+  50% {
+    opacity: 0.5;
+
+  }
+  100% {
+    opacity: 0.5;
+
+  }
+  
+ }
+ .y {
+  animation: y 1s infinite;
+ }
+ @keyframes y {
+  0% {
+    opacity: 0.5;
+
+  }
+  50% {
+    opacity: 1;
+
+  }
+  100% {
+    opacity: 0.5;
+
+  }
+  
+ }
+ .a {
+  animation: a 1s infinite;
+ }
+ @keyframes a {
+  0% {
+    opacity: 0.5;
+
+  }
+  50% {
+    opacity: 0.5;
+
+  }
+  100% {
+    opacity: 1;
+
+  }
+  
+ }
+ input,textarea {
+  height: 40px;
+  border: 1px solid gray;
+  width: 100%;
+  padding-left: 20px;
+ }
+
+ input:focus {
+  outline: none;
+  border: 2px solid rgb(56, 56, 56);
+ }
+ textarea {
+  height: 100px;
+  padding-top: 10px;
+ }
