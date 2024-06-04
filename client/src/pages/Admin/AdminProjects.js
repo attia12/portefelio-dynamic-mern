@@ -18,14 +18,14 @@ function AdminProjects() {
             dispatch(showLoading());
             let response
             if (selectedItemForEdit) {
-                response = await axios.post("/api/portofolio/update-project", {
+                response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/update-project", {
                     ...values,
                     _id: selectedItemForEdit._id
 
                 });
             }
             else {
-                response = await axios.post("/api/portofolio/add-project",
+                response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/add-project",
                     values,
 
                 );
@@ -56,7 +56,7 @@ function AdminProjects() {
     const onDelete = async (item) => {
         try {
             dispatch(showLoading());
-            const response = await axios.post("/api/portofolio/delete-project", {
+            const response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/delete-project", {
 
                 _id: item._id
 

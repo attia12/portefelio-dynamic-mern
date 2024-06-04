@@ -11,7 +11,7 @@ function AdminIntro() {
   const onFinish=async (values)=>{
    try {
     dispatch(showLoading());
-    const response=await axios.post("/api/portofolio/update-intro",{
+    const response=await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/update-intro",{
       ...values,
       _id:portfolioData.intro._id
     });

@@ -43,7 +43,7 @@ function App() {
   },[reloadData])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       {loading ? <Loader/> : null}
       <Routes>
         <Route path="/" element={<Home />} />

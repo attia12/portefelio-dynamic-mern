@@ -10,11 +10,11 @@ function About() {
     return (
         <div>
             <SectionTitle title="About" />
-            <div className='flex w-full items-center'>
-                <div className='h-[70vh] w-1/2'>
+            <div className='flex w-full items-center sm:flex-col'>
+                <div className='h-[70vh] w-1/2 sm:w-full'>
                     <dotlottie-player src={lottieURL} speed="1" autoplay></dotlottie-player>
                 </div>
-                <div className='flex flex-col gap-5 w-1/2'>
+                <div className='flex flex-col gap-5 w-1/2 sm:w-full'>
                     <p className='text-white'>
                       {description1 || ''}
                     </p>

@@ -14,7 +14,7 @@ function AdminAbout() {
       const temSkills=values.skills.split(",");
       values.skills=temSkills
       dispatch(showLoading());
-      const response = await axios.post("/api/portofolio/update-about", {
+      const response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/update-about", {
         ...values,
         _id: portfolioData.about._id
       });

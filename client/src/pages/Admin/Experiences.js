@@ -16,14 +16,14 @@ function Experiences() {
             dispatch(showLoading());
             let response
             if (selectedItemForEdit) {
-                response = await axios.post("/api/portofolio/update-experience", {
+                response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/update-experience", {
                     ...values,
                     _id: selectedItemForEdit._id
 
                 });
             }
             else {
-                response = await axios.post("/api/portofolio/add-experience",
+                response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/add-experience",
                     values,
 
                 );
@@ -54,7 +54,7 @@ function Experiences() {
     const onDelete=async(item) =>{
         try {
             dispatch(showLoading());
-            const response = await axios.post("/api/portofolio/delete-experience", {
+            const response = await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/delete-experience", {
                 
                 _id: item._id
 

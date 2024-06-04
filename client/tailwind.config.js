@@ -12,6 +12,19 @@ module.exports = {
 
       }
     },
+    screens: {
+      'sm': {max:"1000px"},
+    
+
+     
+
+      'lg': {max:"2023px"},
+     
+
+    
+
+    
+    }
   },
   plugins: [],
 }

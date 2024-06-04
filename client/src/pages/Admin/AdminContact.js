@@ -11,7 +11,7 @@ function AdminContact() {
   const onFinish=async (values)=>{
    try {
     dispatch(showLoading());
-    const response=await axios.post("/api/portofolio/update-contact",{
+    const response=await axios.post("https://portefelio-dynamic-mern.onrender.com/api/portofolio/update-contact",{
       ...values,
       _id:portfolioData.contact._id
     });
